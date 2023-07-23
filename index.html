@@ -28,7 +28,10 @@
     <link rel="stylesheet" href="css/custom.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     />
 
     
                        
@@ -78,9 +81,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
-            <li class="nav-item">
+           <!-- <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
-            </li>
+            </li>-->
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
             </li>
@@ -111,8 +114,48 @@
 				</span>
 			</h3>
             <div class="button-wrapper text-center">
-                <a href="mailto:mohammedkayser143@gmail.com?subject=Job%20Offer%20for%20[Job%20Title]%20Position%20In%20[Company%20Name]" class="btn btn-primary">Hire Me</a>
+                <a id="hireMeLink" href="#" class="btn btn-primary">Hire Me</a>
             </div>
+            <!-- Icon links -->
+            <div class="icon-links">
+                <a href="https://www.linkedin.com/in/mohammedkayser/" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mohammedkayser" target="_blank" class="icon-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:mohammedkayser143@gmail.com" class="icon-link">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+            <!-- CSS Styles for the icons -->
+            <style>
+                .icon-links {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                }
+            
+                .icon-link {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-color: #333;
+                    color: #fff;
+                    margin: 0 10px;
+                    font-size: 24px;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+                }
+            
+                .icon-link:hover {
+                    background-color: #555;
+                }
+            </style>
             <style>
                 .btn {
                   display: inline-block;
@@ -164,7 +207,7 @@
                     <div class="message-box">                        
                         <h2>About Me</h2>
                         <p> I am an enthusiastic and analytical data scientist with a wide-ranging background in various industries such as E-commerce, Finance, Healthcare, and Customer & Employee analysis </p>
-						<p>I possess a diverse skill set that includes Analytics, Machine Learning, Visualizations, Forecasting & Time Series, Web development, Programming languages (Python, R, SQL, SAS), Big Data, NLP, Computer Vision, and Cloud Computing.</p>
+						<p>I possess a diverse skill set that includes Analytics, Machine Learning, Visualizations, Forecasting & Time Series, Web development, Programming languages (Python, R, SQL, SPSS) and NLP.</p>
                         <p> I have successfully applied these skills in multiple industrial projects as a data scientist, consistently delivering exceptional results.</p>
                         <p> I am always seeking new challenges to further test my skills and I am eager to tackle business problems through new projects that will contribute to my growth as a data scientist."</p>
                         <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"><span>Download CV</span></a>
@@ -500,8 +543,8 @@
             <div class="section-title text-left">
                 <h3>Services</h3>
                 <p>
-                    Here are the services I am Providing For my clients Through Upwork <br>
-                    If you didn't have an Upwork Account, <a href="mailto:mohammedkayser143@gmail.com?subject=Applying%20For%20[Service%20Name]%20Service">Contact me through Mail</a>.
+                    Here are the services I am Providing For my clients through Upwork and Direct Contracts <br>
+                    If not then <a href="#contact">Contact me through Mail</a>.
                 </p>
             </div><!-- end title -->
 
@@ -513,8 +556,13 @@
                         </div>
                         <h2>Data Aanalysis</h2>
                         <p>-> Data cleaning <br>-> Explotary Data Analysis <br>-> Data Driven Insights <br>-> Sentimental Analysis  </p>
+                        <!-- Apply button that triggers the modal -->
                         <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
-                            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c?s=1110580752008335360" class="sim-btn btn-hover-new" data-text="Details"><span>Apply</span></a>
+                            <!-- Pass the Upwork link as a parameter to showModal -->
+                            <button class="sim-btn btn-hover-new" data-text="Details"
+                                onclick="showModal('https://www.upwork.com/freelancers/~014751ce2122c0cd5c')">
+                                <span>Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -525,8 +573,13 @@
                         </div>
                         <h2>Machine Learning</h2>
                         <p>-> Model Development <br>-> Model Evaluation and Validation <br>-> Preprocessing <br>-> Model Deployment </p>
-                        <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
-                            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c?s=1110580759050571776" class="sim-btn btn-hover-new" data-text="Details"><span>Apply</span></a>
+                         <!-- Apply button that triggers the modal -->
+                         <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
+                            <!-- Pass the Upwork link as a parameter to showModal -->
+                            <button class="sim-btn btn-hover-new" data-text="Details"
+                                onclick="showModal('https://www.upwork.com/freelancers/~014751ce2122c0cd5c')">
+                                <span>Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -537,8 +590,13 @@
                         </div>
                         <h2>Data Visualizations</h2>
                         <p>-> PowerBI <br>-> Tableau <br>-> Python & R <br>-> Decision Making  </p>
-                        <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
-                            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c?s=1110580752008335360" class="sim-btn btn-hover-new" data-text="Details"><span>Apply</span></a>
+                         <!-- Apply button that triggers the modal -->
+                         <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
+                            <!-- Pass the Upwork link as a parameter to showModal -->
+                            <button class="sim-btn btn-hover-new" data-text="Details"
+                                onclick="showModal('https://www.upwork.com/freelancers/~014751ce2122c0cd5c')">
+                                <span>Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -561,8 +619,13 @@
                         </div>
                         <h2>Web Application</h2>
                         <p>-> Flask App <br>-> ML models into App <br>-> Shiny App <br>-> Streamlit App  .</p>
+                        <!-- Apply button that triggers the modal -->
                         <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
-                            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c" class="sim-btn btn-hover-new" data-text="Details"><span>Apply</span></a>
+                            <!-- Pass the Upwork link as a parameter to showModal -->
+                            <button class="sim-btn btn-hover-new" data-text="Details"
+                                onclick="showModal('https://www.upwork.com/freelancers/~014751ce2122c0cd5c')">
+                                <span>Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -573,8 +636,13 @@
                         </div>
                         <h2>Web Design</h2>
                         <p>-> Front-end Design <br>-> Figma UI/UX <br>-> Design For Your Project <br>-> Design Ideas </p>
-                        <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
-                            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c" class="sim-btn btn-hover-new" data-text="Details"><span>Apply</span></a>
+                         <!-- Apply button that triggers the modal -->
+                         <div class="hire-button" style="position: absolute; top: 10px; right: 27px;">
+                            <!-- Pass the Upwork link as a parameter to showModal -->
+                            <button class="sim-btn btn-hover-new" data-text="Details"
+                                onclick="showModal('https://www.upwork.com/freelancers/~014751ce2122c0cd5c')">
+                                <span>Apply</span>
+                            </button>
                         </div>
                     </div>
                 </div><!-- end col -->
@@ -582,12 +650,12 @@
        </div><!-- end container -->
    </div><!-- end section -->
 	
-   <div id="testimonials" class="section wb">
+   <!--  <div id="testimonials" class="section wb">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Testimonials</h3>
                 <p>We thanks for all our awesome testimonials! </p>
-            </div><!-- end title -->
+            </div>
 
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -601,9 +669,9 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>James Fernando <small>- Manager of Racer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                            
                         </div>
-                        <!-- end testimonial -->
+                        
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -614,9 +682,9 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>Jacques Philips <small>- Designer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                            
                         </div>
-                        <!-- end testimonial -->
+                        
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -627,9 +695,9 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>Venanda Mercy <small>- Newyork City</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                            
                         </div>
-                        <!-- end testimonial -->
+                        
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
@@ -639,9 +707,9 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>James Fernando <small>- Manager of Racer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                        
                         </div>
-                        <!-- end testimonial -->
+                        
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -652,9 +720,9 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>Jacques Philips <small>- Designer</small></h4>
                             </div>
-                            <!-- end testi-meta -->
+                            
                         </div>
-                        <!-- end testimonial -->
+                        
 
                         <div class="testimonial clearfix">
                             <div class="desc">
@@ -665,13 +733,13 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>Venanda Mercy <small>- Newyork City</small></h4>
                             </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
-                    </div><!-- end carousel -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 	
 	<div id="blog" class="section lb">
 		<div class="container">
@@ -793,14 +861,12 @@
             <div class="footer-distributed">
                 <div class="footer-left">
                     <p class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">About</a>
-                        <a href="#">Faq</a>
-                        <a href="#">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
                     </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">MK.</a> Design By : Mohammed Kayser
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">MK.</a> Design By : Mohammed Kayser
                 </div>
             </div>
         </div><!-- end container -->
@@ -808,6 +874,93 @@
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
+    <!-- hire button js-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hireMeLink = document.getElementById("hireMeLink");
+      
+          // Function to open the mail client with the subject dynamically populated
+          function openMailClient() {
+            const jobTitle = prompt("Enter the job title:");
+            const companyName = prompt("Enter the company name:");
+      
+            const subject = `Job Offer for ${jobTitle} Position in ${companyName}`;
+            const mailtoLink = `mailto:mohammedkayser143@gmail.com?subject=${encodeURIComponent(
+              subject
+            )}`;
+      
+            // Open the mail client with the dynamically generated mailto link
+            window.location.href = mailtoLink;
+          }
+      
+          hireMeLink.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            openMailClient();
+          });
+        });
+    </script>
+
+    <!-- service apply button js-->
+
+    <!-- The modal (pop-up) -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <h3>Choose an Option</h3>
+        <!-- Two buttons inside the modal -->
+        <div class="modal-buttons">
+            <!-- Use a placeholder for the Upwork link -->
+            <a href="https://www.upwork.com/freelancers/~014751ce2122c0cd5c" class="sim-btn upwork-btn" target="_blank">
+                <span>Upwork</span>
+            </a>
+            <a href="https://www.upwork.com/workwith/mohamedkayser" class="sim-btn">
+                <span>Direct Contact</span>
+            </a>
+        </div>
+    </div>
+</div>
+        <!-- CSS for the modal -->
+<style>
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%; /* Could be more or less, depending on screen size */
+    }
+    .modal-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+</style>
+
+<!-- JavaScript to show/hide the modal -->
+<script>
+    function showModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById("myModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+      
     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
 	<!-- Camera Slider -->
