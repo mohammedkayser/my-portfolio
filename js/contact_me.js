@@ -7,18 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const name = formData.get("name");
     const email = formData.get("email");
-    const phone = formData.get("phone");
     const subject = formData.get("subject");
     const message = formData.get("message");
 
+    // Add the name at the end of the main message
+    const fullMessage = `${message}\n\n- ${name}\n\n- ${email}`;
+
     const mailtoLink = `mailto:mohammedkayser143@gmail.com?subject=${encodeURIComponent(
       subject
-    )}&body=${encodeURIComponent(message)}`;
+    )}&body=${encodeURIComponent(fullMessage)}`;
     
     window.location.href = mailtoLink;
   });
 });
-
 
 
 
