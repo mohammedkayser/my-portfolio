@@ -119,12 +119,11 @@
     <section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.png')">
         <div class="heading">
             <h1>hello i'm Mohammed Kayser</h1>
-            <p>"A <span style="font-weight: bold; font-size: 30px;">"Data Scientist"</span> with diverse industry
-                background
+            <p>Data Scientist with the diverse Project experience and industry background
                 <br> Expertise in Analytics, Machine Learning, and Visualizations
                 <br> Proven track record of delivering exceptional results
-                <br>In E-commerce, Finance, Healthcare, and Customer & Employee analysis.
-                <br> Seeking new challenges to continue growing and making an impact."
+                <br>In E-commerce, Finance, Healthcare, and Technology.
+                <br> Seeking new challenges to continue growing and making an impact with Data.
             </p>
 
 
@@ -230,13 +229,13 @@
                 <div class="col-md-6">
                     <div class="message-box">
                         <h2>About Me</h2>
-                        <p>With over 1+ YoE in Data science & Analytics across 5+ Firms spanning diverse industries and Successfully delivered 15+ data science projects.
+                        <p>With over 1+ YoE in Data science & Analytics across 5+ Firms spanning diverse industries and Successfully delivered 20+ data science projects.
                              Some of these projects were end-to-end with deployments, showcasing my ability to drive data-driven decisions and outcomes</p>
                         <p>Hands on diverse skill set that includes Analytics, Machine Learning, Visualizations,
                             Forecasting & Time Series, Web development, Programming languages (Python, R, SQL, SPSS) and
                             NLP.</p>
-                        <p> Proven track record in utilizing a diverse skill set to tackle industrial projects, dedicated to addressing complex business problems through analytical prowess, machine learning techniques, and effective communication. 
-                             Ready to take on impactful projects, I look forward to expanding my skill set and contributing meaningfully to organizations' data-driven decision-making processes.</p>
+                        <p> Dedicated to addressing complex business problems through analytical prowess, machine learning techniques, and effective communication. 
+                             Ready to take on impactful projects, I look forward to expanding my skill set and contributing to organizations To Make Dollars From Data.</p>
                             <a href="https://drive.google.com/uc?export=download&id=1fl-EbrjDZ2YTSLcHyyrt0vN9hThhXHC_"
                                 class="sim-btn btn-hover-new">
                                 <span>Download CV</span>
@@ -254,15 +253,261 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <!-- Skills Section -->
+
+    <div class="vg-page page-funfact">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="row section-counter">
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="20">20</h1>
+                    <span>Projects</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="6">6</h1>
+                    <span>Webinars</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="5">5</h1>
+                    <span>Worked In Firms</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="1">1</h1>
+                    <span>YoE as Intern</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="100">100</h1>
+                    <span>Mentored</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="60">60</h1>
+                    <span>Lead team of</span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="5">5 </h1>
+                    <span>Clients </span>
+                </div>
+                <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+                    <h1 class="number-count" data-number="8.50">8.50 </h1>
+                    <span>CGPA </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script>
+        // Function to count up numbers
+        function countUpNumbers() {
+            var counters = document.querySelectorAll('.number-count');
+            
+            counters.forEach(function(counter) {
+                var target = +counter.getAttribute('data-number');
+                var duration = 3000; // Change this value to adjust the duration of counting (in milliseconds)
+                var step = Math.ceil(target / duration * 70); // Change this value to adjust the speed of counting
+                
+                var count = 0;
+                var interval = setInterval(function() {
+                    count += step;
+                    counter.textContent = count.toLocaleString();
+                    
+                    if (count >= target) {
+                        counter.textContent = target.toLocaleString();
+                        clearInterval(interval);
+                    }
+                }, 50); // Update every 50 milliseconds
+            });
+        }
+    
+        // Call the countUpNumbers function when the page is loaded
+        window.addEventListener('load', countUpNumbers);
+    </script>
+    
+    
+    <style>
+
+.page-funfact {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Adjust the opacity value as needed */ 
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1;
+}
+       .page-funfact {
+    background-image: url(images/bg_banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0; /* Adjust the padding to increase the height of the rectangle */
+}
+
+.section-counter .number-count {
+    color: #fff; /* Set the text color of the numbers to white */
+    font-weight: bold; /* Make the numbers bold */
+    font-size: 36px; /* Increase the font size of the numbers */
+}
+
+.section-counter span {
+    color: #ffffff; /* Set the text color of the text under the numbers to white */
+     /* Make the text under the numbers bold */
+    font-size: 18px; /* Increase the font size of the text under the numbers */
+}
+
+    </style>
+
+    
+
+    <section id="hello" class="section wb">
+        <div class="container">
+            <div class="col-md-12">
+                <h2 class="section-title text-center font-weight-bold" style="font-size: 40px;">Functional Areas</h2>
+                <h7 class="section-title text-center " style="font-size: 20px;"> My Area Of Interest & Expertise</h7>
+            </div> <!-- end title -->
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="main-service text-center wow fadeInLeft">
+                        <div class="rectangle">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Analytics</h3>
+                        <p>With advanced analytics techniques, I transform raw data into actionable insights, enabling informed decision-making and strategic planning.</p>
+                    </div><!-- /.main-service -->
+                    <div class="main-service text-center wow fadeInLeft">
+                        <div class="rectangle">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                        </div>
+                        <h3>Business Intelligence</h3>
+                        <p>Using business intelligence tools, I extract valuable insights from complex datasets, empowering organizations to gain a competitive edge through data-driven strategies.</p>
+                    </div><!-- /.main-service -->
+                </div><!-- end col -->
+    
+                <div class="col-md-4">
+                    <div class="big-rectangle wow fadeInUp">
+                        <img src="images/functional.jpg" alt="">
+                    </div><!-- /.big-rectangle -->
+                </div><!-- end col -->
+                
+                <style>
+                .big-rectangle img {
+                    max-width: 100%; /* Limit the image width to fit within the hexagon */
+                    height: auto; /* Maintain aspect ratio */
+                    display: block; /* Ensure the image is centered */
+                    margin: 120px auto 0; /* Center the image horizontally */
+                }
+                </style>
+    
+                <div class="col-md-4">
+                    <div class="main-service text-center wow fadeInRight">
+                        <div class="rectangle">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Harnessing the power of machine learning algorithms, I develop predictive models that uncover patterns in data, drive automation, and optimize processes.</p>
+                    </div><!-- /.main-service -->
+                    <div class="main-service text-center wow fadeInRight">
+                        <div class="rectangle">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                        </div><!-- /.rectangle -->
+                        <h3>Artificial Intelligence</h3>
+                        <p>Leveraging artificial intelligence technologies, I develop intelligent systems that mimic human behavior, enabling automation, personalization, and smarter decision-making.</p>
+                    </div><!-- /.main-service -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </section><!-- end section -->
+    
+<style>
+.wow {
+    visibility: hidden;
+}
+
+.rectangle {
+    width: 80px;
+    height: 80px;
+    background-color: #f9c700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.rectangle i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.main-service h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.main-service p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+</style>
+
+<!-- Fun Fact Section with Tools Icons -->
+<div class="vg-page page-funfact" style="background: linear-gradient(to right, #2d0030, #000000);">
+    <div class="container text-center justify-content-center">
+      <div class="row section-counter">
+        <!-- Python Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/python.png" alt="Python Icon" width="80">
+        </div>
+  
+        <!-- Tableau / PowerBI Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/r_logo.png" alt="Tableau Icon" width="80">
+        </div>
+  
+        <!-- Powerbi Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/SQL.png" alt="Powerbi Icon" width="80">
+        </div>
+  
+        <!-- SQL Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/powerbi.png" alt="SQL Icon" width="80">
+        </div>
+  
+        <!-- Excel Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/Excel.png" alt="Excel Icon" width="80">
+        </div>
+  
+        <!-- GCP Tool Icon -->
+        <div class="col-md-2 py-4 wow fadeIn">
+          <img src="uploads/skills icon/Tableau.png" alt="GCP Icon" width="80">
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+          <!-- Skills Section -->
     <div class="container mt-5">
         <div class="row">
             <!-- Skills Title -->
             <div class="col-md-12">
                 <h2 class="section-title text-center font-weight-bold" style="font-size: 40px;">Skills</h2>
             </div>
-        </div>
-
+        </div>  
         <div class="row">
             <!-- Tools Column -->
             <div class="col-md-4">
@@ -344,15 +589,17 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="courses">
-                    <h6 style="font-size: 18px;"><strong>Courses & Cerifications:</strong></h6>
+                    <h6 style="font-size: 18px;"><strong>Courses :</strong></h6>
                     <ul style="list-style: none;">
-                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Continuous distribution.</li>
+                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Continuous distribution & Operation Research</li>
                       <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Statistical methods & Applied statistics.</li>
                       <li style="font-size: 14px;"><span class "bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Sampling & estimation theory</li>
                       <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Matrix & linear algebra & Data mining</li>
-                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Regression Analysis, Python, R, SQL, SPSS, Excel</li>
-                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Google Professional Data Analytics Cerification.</li>
-                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>R Programming for Statistics and Data Science.</li>
+                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Design Of Experiments & Testing Of Hypothesis</li>
+                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Regression Analysis & Statistical Quality Control</li>
+                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Python, R, SQL, SPSS, Excel</li>
+                      <!-- <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Google Professional Data Analytics Cerification.</li>
+                      <li style="font-size: 14px;"><span class="bullet" style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>R Programming for Statistics and Data Science.</li> -->
                     </ul>
                   </div>
                 </div>
@@ -374,26 +621,298 @@
       </div>
     </div>
   </div>
-  
-  
 
 
+  <style>
+    /* Add extra space before the "Experience" section */
+    .certifications-section {
+        margin-top: 70px;
+        /* You can adjust the value (e.g., 30px) to increase or decrease the space */
+    }
+</style>
 
+
+    <!-- Certifications and Achievements section -->
+    <section class="certifications-section">
+        <div class="section-title text-center">
+            <h3>Certifications & Achievements</h3>
+            <p>Here is my Proof Of my Skills and Recognition through My Certfications and Achievements.</p>
+          </div>
+      
+        <div class="certification-container">
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/gda_cert.png" alt="Certification 1">
+            </div>
+            <div class="certification-back">
+              <h3>Google Professional Data Analytics </h3>
+              <!-- <p>Details about Certification 1 go here.</p> -->
+            </div>
+          </div>
+      
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/r_cert.png" alt="Certification 2">
+            </div>
+            <div class="certification-back">
+              <h3>R Programming for Data science & Statistics</h3>
+              <!-- <p>Details about Certification 2 go here.</p> -->
+            </div>
+          </div>
+      
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/ds_skill_vertex_cert.png" alt="Certification 3">
+            </div>
+            <div class="certification-back">
+              <h3>Data Science Training - Skill Vertex</h3>
+              <!-- <p>Details about Certification 3 go here.</p> -->
+            </div>
+          </div>
+      
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/placement_cert.png" alt="Certification 4">
+            </div>
+            <div class="certification-back">
+              <h3>Placement Coordinator </h3>
+              <!-- <p>Details about Certification 4 go here.</p> -->
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/top_voice_linkedin.png" alt="Certification 4">
+            </div>
+            <div class="certification-back">
+              <h3>LinkedIn Top Voice </h3>
+              <!-- <p>Details about Certification 4 go here.</p> -->
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/topmate_ach.png" alt="Certification 4">
+            </div>
+            <div class="certification-back">
+              <h3>Topmate Top 5% Mentors</h3>
+              <!-- <p>Details about Certification 4 go here.</p> -->
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/sparks_cert.jpeg" alt="Certification 4">
+            </div>
+            <div class="certification-back">
+              <h3>Business Analayst Intern</h3>
+              <!-- <p>Details about Certification 4 go here.</p> -->
+            </div>
+          </div>
+
+          <div class="certification-card">
+            <div class="certification-front">
+              <img src="uploads/certs/viz_cert.png" alt="Certification 4">
+            </div>
+            <div class="certification-back">
+              <h3>Visualization Google Certified</h3>
+              <!-- <p>Details about Certification 4 go here.</p> -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    
     <style>
-        /* Add extra space before the "Experience" section */
-        #experience {
-            margin-top: 190px;
-            /* You can adjust the value (e.g., 30px) to increase or decrease the space */
-        }
+        .certification-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.certification-card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.certification-front, .certification-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.certification-front {
+  transform: rotateY(0deg);
+}
+.certification-front img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.certification-back {
+  transform: rotateY(180deg);
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.certification-card.hovered .certification-front {
+  transform: rotateY(-180deg);
+}
+
+.certification-card.hovered .certification-back {
+  transform: rotateY(0deg);
+}
+
     </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const certificationCards = document.querySelectorAll('.certification-card');
+
+    certificationCards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            card.classList.add('hovered');
+        });
+
+        card.addEventListener('mouseout', () => {
+            card.classList.remove('hovered');
+        });
+    });
+});
+
+</script>
+
+<!-- EXPERIENCE SECTION-->
 
     <div id="experience" class="section">
         <div class="container">
             <div class="section-title text-center">
                 <h3>Experience</h3>
-                <p>Here is my work experience in the field.</p>
+                <p>Here is my Recent Work Experience in the field Of Data.</p>
             </div>
             <div class="row">
+
+                <div class="col-md-6">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 style="font-size: 29px;"><strong>AutonoPros</strong></h4>
+                            <p class="experience-duration" style="font-size: 16px;">November 2023 - Present (Hyderabad, Remote)</p>
+                        </div>
+                        <div class="experience-content">
+                            <h5 style="font-size: 18px;">Data Science - Manager</h5>
+                            <p style="font-size: 14px;">
+                            <ul style="list-style-type: none;">
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>
+                                    Focused on building a comprehensive data science product from the ground up for our clients.</li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Currently engaged in the research and project development phase. This involves gathering requirements.
+                                </li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Laying the groundwork for data analysis and model implementation.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 style="font-size: 29px;"><strong>Chennai Port Trust - Gov.India</strong></h4>
+                            <p class="experience-duration" style="font-size: 16px;">December 2023 - January 2024 (Chennai) </p>
+                        </div>
+                        <div class="experience-content">
+                            <h5 style="font-size: 18px;">Statistical Analyst - P&R </h5>
+                            <p style="font-size: 14px;">
+                            <ul style="list-style-type: none;">
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>
+                                    Leveraging advanced Statistical Analysis techniques to derive actionable insights from port data (2018-2022).</li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Presenting resulting report insights to the Planning and Research Department to inform decision-making.                                </li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Guiding future decision-making processes based on insights derived from statistical analysis.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 style="font-size: 29px;"><strong>SquareOff</strong></h4>
+                            <p class="experience-duration" style="font-size: 16px;">August 2023 - November 2023 (Chennai) </p>
+                        </div>
+                        <div class="experience-content">
+                            <h5 style="font-size: 18px;">Data Analyst - Investment Management </h5>
+                            <p style="font-size: 14px;">
+                            <ul style="list-style-type: none;">
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>
+                                    Developed a Streamlit Application for stock analysis using historical data from 2007 to 2023.</li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Achieved a 5% reduction in internal operations workload through application implementation. </li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;">
+                                    </span>Significantly improved productivity and decision-making processes with the new application.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 style="font-size: 29px;"><strong>PredictRAM</strong></h4>
+                            <p class="experience-duration" style="font-size: 16px;">Jan 2023 - Feb 2023 (Delhi , Remote)</p>
+                        </div>
+                        <div class="experience-content">
+                            <h5 style="font-size: 18px;">Financial Analyst - Portfolio Management</h5>
+                            <p style="font-size: 14px;">
+                            <ul style="list-style-type: none;">
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Mining
+                                    data and conducting research for fundamental and technical analysis of stocks. </li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Tracking,
+                                    monitoring, and recording market data, and preparing forecasts on financial events.
+                                </li>
+                                <li><span class="bullet"
+                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Giving
+                                    opinions and insights on upcoming economic events.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6">
                     <div class="experience-item">
                         <div class="experience-header">
@@ -420,6 +939,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6">
                     <div class="experience-item">
                         <div class="experience-header">
@@ -427,7 +947,7 @@
                             <p class="experience-duration" style="font-size: 16px;">Sep 2022 - Oct 2022</p>
                         </div>
                         <div class="experience-content">
-                            <h5 style="font-size: 18px;">Business Analyst</h5>
+                            <h5 style="font-size: 18px;">Business Analyst Intern</h5>
                             <p style="font-size: 14px;">
                             <ul style="list-style-type: none;">
                                 <li><span class="bullet"
@@ -444,7 +964,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                     <div class="experience-item">
                         <div class="experience-header">
                             <h4 style="font-size: 29px;"><strong>Code Clause</strong></h4>
@@ -467,36 +987,11 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4 style="font-size: 29px;"><strong>PredictRAM</strong></h4>
-                            <p class="experience-duration" style="font-size: 16px;">Jan 2023 - Feb 2023</p>
-                        </div>
-                        <div class="experience-content">
-                            <h5 style="font-size: 18px;">Financial Analyst</h5>
-                            <p style="font-size: 14px;">
-                            <ul style="list-style-type: none;">
-                                <li><span class="bullet"
-                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Mining
-                                    data and conducting research for fundamental and technical analysis of stocks. </li>
-                                <li><span class="bullet"
-                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Tracking,
-                                    monitoring, and recording market data, and preparing forecasts on financial events.
-                                </li>
-                                <li><span class="bullet"
-                                        style="display: inline-block; width: 8px; height: 8px; background-color: black; border-radius: 50%; margin-right: 8px;"></span>Giving
-                                    opinions and insights on upcoming economic events.</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+                
             </div>
         </div>
     </div>
-
 
 
 
@@ -506,6 +1001,603 @@
                 <h3>Projects</h3>
                 <p>Take a look into My diverse projects on various Industries using Various Tools</p>
             </div><!-- end title -->
+    
+            <!-- HTML structure for the filtering dropdowns -->
+            <div class="filter-dropdowns-container">
+                <!-- Filtering dropdowns -->
+                <div class="filter-dropdowns">
+                    <div class="dropdown-container">
+                        <label for="tool-filter">Choose Tools:</label>
+                        <select id="tool-filter">
+                            <option value="python">Python</option>
+                            <option value="r-progarmming">R</option>
+                            <option value="sql">SQL</option>
+                            <option value="powerbi">PowerBI</option>
+                            <option value="excel">Excel</option>
+                            <option value="web">Html,Css</option>
+                            <!-- Add more options based on your available tools -->
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <label for="technique-filter">Choose Techniques:</label>
+                        <select id="technique-filter">
+                            <option value="machine-learning">Machine Learning</option>
+                            <option value="analytics">Analytics</option>
+                            <option value="data-visualization">Data Visualization</option>
+                            <option value="forecasting-timeseries">Forecasting & time series</option>
+                            <option value="nlp">NLP</option>
+                            <option value="ai-recommendation">AI & Recommendation</option>
+                            <option value="ab-testing">AB Testing</option>
+                            <option value="front-end">Front End</option>
+                            <!-- Add more options based on your available techniques -->
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <label for="industry-filter">Choose Industry:</label>
+                        <select id="industry-filter">
+                            <option value="technology">Technology</option>
+                            <option value="finance">Finance</option>
+                            <option value="education">Education</option>
+                            <option value="energy">Energy</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="entertainment">Entertainment & Marketing</option>
+                            <option value="e-commerce">E-Commerce</option>
+                            <option value="automative">Automative</option>
+                            <!-- Add more options based on your available industries -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .filter-dropdowns {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+            
+                .dropdown-container {
+                    flex: 0 0 30%;
+                    /* Adjust width of each dropdown container */
+                    margin-bottom: 10px;
+                    /* Adjust spacing between dropdowns */
+                    text-align: center;
+                    /* Center the content horizontally */
+                }
+            
+                .dropdown-container label {
+                    display: block;
+                }
+            </style>
+            
+            <!-- Show All button -->
+            <button id="show-all-btn">Show All</button>
+    
+    
+    
+            <!-- Gallery grid -->
+            <div class="gallery-list row">
+                <!-- Project items with specific classes -->
+    
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning energy">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/electricty_demand.jpeg" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://github.com/mohammedkayser/electricty_hourly_demand" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Electricity Demand<br> Hourly Prediction<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python ai-recommendation technology">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/data_project-gemini.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://github.com/mohammedkayser/gemini_project_generator" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Data Project Generator<br> Gemini AI<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/anomaly.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://github.com/mohammedkayser/Anomaly-Detection-Streamlit-App" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Fraud Detection<br> Credit Card<br>Streamlit app</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python ai-recommendation e-commerce">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/amazon_recommendation.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/amazon-product-recommendation-system"
+                                class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(249, 245, 245);">Amazon
+                                    Product<br>Recommendation <br>Flask App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning energy">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/energydemand.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/energy-demand-prize-prediction-app-streamlit" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(247, 245, 245);">Energy
+                                    Demand <br>Prize Predicton<br>Streamlit App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning education">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/stud_perf.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/student-performance-prediction-app-flask" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">Students
+                                    Performance<br>Prediction<br>Flask App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python ab-testing education">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/ab_testing.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://github.com/mohammedkayser/A-B-Testing--Hypothesis/tree/main" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Students Performance<br> Hypothesis testing<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python data-visualization healthcare">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/cancer_viz.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/world-cancer-deaths-visualizations" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 240, 240);">World
+                                    Cancer <br>Visualizations<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix powerbi data-visualization technology">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/data_profession_powerbi.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/data-profession-survey-dashboard-powerbi" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 240, 240);">Data
+                                    Professional<br>Survey Analysis<br>PowerBI Dashboard</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix r-progarmming forecasting-timeseries finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/aapl_stock.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/aapl-stock-forecasting-shiny-app" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(249, 243, 243);">
+                                    AAPL Stock <br> Forecasting <br> Shiny App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix excel forecasting-timeseries finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/sales_forecasting.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/sales-forecasting-excel" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(249, 243, 243);">
+                                    Quaterly Sales <br> Forecasting <br> MS-Excel</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python analytics entertainment">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/fifa_analysis.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/fifa-data-analytics" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">FIFA
+                                    Analytics<br>Football<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix r-progarmming nlp entertainment">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/sentiment_analysis.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/sentimental-analysis-apple-tweets" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(247, 242, 242);">Apple
+                                    Tweets<br>Sentimental Analysis<br>Using R</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix sql analytics technology">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/sql.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://docs.google.com/document/d/1SBqAaoh3jKVapxExYuEgcS9TfrGGm1h3O-ikhiOA5tk/edit?usp=sharing"
+                                class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(247, 242, 242);">SQL<br>Employee
+                                    & Customer<br>Analytics</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix excel analytics finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/finance.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://docs.google.com/document/d/e/2PACX-1vQnt-0tAeqmTG193P8Jv3T3pbaJkopjOYxqWNk5gkVeseU8mUWJqWqhQ3gBUgEaFwxgsDYEURKZ531W/pub"
+                                class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(247, 242, 242);">Finance
+                                    Analytics<br>Indian Budget<br>Research Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning healthcare">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/disease.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/multiple-disease-prediction-streamlit-app" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 240, 240);">Multiple
+                                    Disease<br>Prediction<br>Streamlit App</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python machine-learning analytics technology">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/employee_prediction.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/employee-promotion-prediction-python" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(247, 245, 245);">Employees
+                                    Analytics<br>Promotion Prediction<br>Python</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix python analytics finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/stock.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://github.com/mohammedkayser/ROI_Streamlit_app/tree/main" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Stock ROI <br> Historical Analytics<br>Python Streamlit app</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix powerbi data-visualization automative">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/road_accident.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://www.novypro.com/profile_projects/mohamedkayser" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 237, 237);">
+                                    Road Accidents<br> Dashboard<br>PowerBI</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix web front-end entertainment">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/ipl_web.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/ipl-analytics-web-design" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(252, 247, 247);">IPL
+                                    Analytics<br>Website<br>Front End</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid">
+                    <div class="gallery-single fix web front-end finance">
+                        <!-- Project content -->
+                        <img src="uploads/project_images/invoice_billing.png" class="img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="https://fueler.io/mohammedkayser/invoice-billing-software-using-c-win-forms" class="square-link"
+                                style="display: inline-flex; justify-content: center; align-items: center; width: 100px; height: 100px; ">
+                                <span class="show-text"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: bold; color: rgb(245, 238, 238);">Invoice
+                                    Billing<br>Software<br>Win forms C#</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more project items as needed with appropriate classes -->
+            </div>
+        </div>
+    </div>
+    
+<script>  
+    document.addEventListener('DOMContentLoaded', function () {
+        // Function to handle project filtering
+        function filterProjects() {
+            const selectedTool = document.getElementById('tool-filter').value;
+            const selectedTechnique = document.getElementById('technique-filter').value;
+            const selectedIndustry = document.getElementById('industry-filter').value;
+    
+            const projects = document.querySelectorAll('.gallery-single');
+    
+            projects.forEach(project => {
+                const tool = selectedTool === 'all' || selectedTool === '' || project.classList.contains(selectedTool);
+                const technique = selectedTechnique === 'all' || selectedTechnique === '' || project.classList.contains(selectedTechnique);
+                const industry = selectedIndustry === 'all' || selectedIndustry === '' || project.classList.contains(selectedIndustry);
+    
+                if (tool && technique && industry) {
+                    project.style.display = 'block'; // Show the project
+                } else {
+                    project.style.display = 'none'; // Hide the project
+                }
+            });
+    
+            // Reorder the projects in the gallery
+            const galleryList = document.querySelector('.gallery-list');
+            galleryList.prepend(...projects);
+        }
+    
+        // Event listeners for filter dropdowns
+        document.getElementById('tool-filter').addEventListener('change', filterProjects);
+        document.getElementById('technique-filter').addEventListener('change', filterProjects);
+        document.getElementById('industry-filter').addEventListener('change', filterProjects);
+    
+        // Initial filter on page load
+        filterProjects();
+    
+        // Get reference to the Show All button
+        const showAllBtn = document.getElementById('show-all-btn');
+    
+        // Add event listener to the Show All button
+        showAllBtn.addEventListener('click', function () {
+            const projects = document.querySelectorAll('.gallery-single');
+    
+            projects.forEach(project => {
+                project.style.display = 'block'; // Show all projects
+            });
+    
+            // Reset dropdowns to default option
+            document.getElementById('tool-filter').selectedIndex = 0;
+            document.getElementById('technique-filter').selectedIndex = 0;
+            document.getElementById('industry-filter').selectedIndex = 0;
+    
+            // Reorder the projects in the gallery
+            const galleryList = document.querySelector('.gallery-list');
+            galleryList.prepend(...projects);
+        });
+    });
+    
+    // Function to initialize the dropdowns with "All" option
+    function initializeDropdowns() {
+        const dropdowns = document.querySelectorAll('.filter-dropdowns select');
+    
+        dropdowns.forEach(dropdown => {
+            const defaultOption = document.createElement('option');
+            defaultOption.text = 'All';
+            defaultOption.value = 'all'; // Set value to 'all'
+            dropdown.add(defaultOption, 0); // Add the option at the beginning
+    
+            // Set dropdown to 'All' initially
+            dropdown.selectedIndex = 0;
+        });
+    }
+    
+    // Initialize the dropdowns
+    initializeDropdowns();
+</script>    
+        
+        
+
+<style>
+   
+   .gallery-single.fix {
+    margin-bottom: auto; /* Adjust the spacing between projects */
+    width: calc(25% - 30px); /* Adjust the width of each project */
+    height: 200px; /* Set a fixed height for each project */
+    overflow: hidden; /* Hide any overflow content */
+    position: relative; /* Positioning for overlay */
+}
+
+
+@media (max-width: 992px) {
+    .gallery-single.fix {
+        width: calc(50% - 30px); /* Adjust the width for medium devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-single.fix {
+        width: calc(100% - 30px); /* Adjust the width for small devices */
+    }
+}
+
+.gallery-single.fix img {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Positioning for image */
+    top: 50%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -50%); /* Center the image */
+}
+
+    
+  /* Style for the filtering dropdowns container */
+  .filter-dropdowns-container {
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center the items horizontally */
+        margin-bottom: 20px; /* Add margin at the bottom for spacing */
+        text-align: center; /* Center-align all content */
+    }
+
+    /* Style for the filtering dropdowns */
+    .filter-dropdowns select {
+        margin-right: 10px; /* Add margin between dropdowns */
+        padding: 10px; /* Add padding for spacing */
+        font-size: 16px; /* Increase font size */
+        width: 200px; /* Set width of the dropdowns */
+        border: 2px solid #000000; /* Dropdown border */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+    }
+
+    /* Change dropdown color on hover */
+    .filter-dropdowns select:hover {
+        background-color: #f1f1f1; /* Hover background color */
+    }
+    
+    /* Style for the "Show All" button */
+    #show-all-btn {
+        display: block;
+        margin: 20px auto; /* Center the button */
+        padding: 10px 20px; /* Add padding for spacing */
+        font-size: 18px; /* Increase font size */
+        background-color: #ffffff; /* Button background color */
+        color: #000000; /* Button text color */
+        border: 2px solid #000000; /* Button border */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+    }
+
+    /* Change button color on hover */
+    #show-all-btn:hover {
+        background-color: #000000; /* Hover background color */
+        color: #ffffff; /* Hover text color */
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+
+<!-- PROJECTS-->
+
+
+    <!-- <div id="projects" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Projects</h3>
+                <p>Take a look into My diverse projects on various Industries using Various Tools</p>
+            </div>
 
             <div class="gallery-menu row">
                 <div class="col-md-12">
@@ -739,7 +1831,7 @@
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 
 
     <div id="services" class="section lb">
@@ -859,11 +1951,11 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <!--  <div id="testimonials" class="section wb">
+     <div id="testimonials" class="section wb">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Testimonials</h3>
-                <p>We thanks for all our awesome testimonials! </p>
+                <p>I thank all For Awesome testimonials! </p>
             </div>
 
             <div class="row">
@@ -872,30 +1964,59 @@
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                                <p class="lead">Had a nice session with Mohamed for understanding my needs and concerns to provide a prompt resolution.     
+                                                                                                                                   
+                                </p>
                             </div>
                             <div class="testi-meta">
-                                <img src="#" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
+                                <!-- <img src="#" alt="" class="img-fluid alignleft"> -->
+                                <h4>Sai Arjun<small>- Project Client </small></h4>
                             </div>
                             
                         </div>
                         
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Guidance On Projects!</h3>
+                                <p class="lead">Thanks to Mr. Kayser, I gained valuable insights into the job market and received guidance on projects when I was clueless.
+                                     A dedicated Data aspirant, freelancer, 
+                                    and student, he stands out in our batch. An experienced individual and a great friend.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <!-- <img src="#" alt="" class="img-fluid alignleft"> -->
+                                <h4>Jeeva V<small>- Team Mate</small></h4>
+                            </div>
+                            
+                        </div>
 
                         <div class="testimonial clearfix">
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                                <h3><i class="fa fa-quote-left"></i> Valuable Insights!</h3>
+                                <p class="lead">Great Inputs and Valuable Insights for Beginners In the data field . </p>
                             </div>
                             <div class="testi-meta">
-                                <img src="#" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
+                                <!-- <img src="#" alt="" class="img-fluid alignleft"> -->
+                                <h4>Likitha <small>- Data Aspirant </small></h4>
                             </div>
                             
                         </div>
-                        
 
                         <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Good To Talk!</h3>
+                                <p class="lead">It's Good to talk to Mohamed , Shared Lot's of insights</p>
+                            </div>
+                            <div class="testi-meta">
+                                <!-- <img src="#" alt="" class="img-fluid alignleft"> -->
+                                <h4>Chethan<small>- ML engineer</small></h4>
+                            </div>
+                            
+                        </div>
+
+                
+                        
+
+                        <!-- <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
                                 <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
@@ -904,51 +2025,16 @@
                                 <img src="#" alt="" class="img-fluid alignleft">
                                 <h4>Venanda Mercy <small>- Newyork City</small></h4>
                             </div>
-                            
-                        </div>
+                        </div> -->
                         
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="#" alt="" class="img-fluid alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                        
-                        </div>
-                        
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="#" alt="" class="img-fluid alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            
-                        </div>
-                        
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="#" alt="" class="img-fluid alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
+                
                             
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div id="blog" class="section lb">
         <div class="container">
