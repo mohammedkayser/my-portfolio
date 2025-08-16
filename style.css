@@ -303,10 +303,6 @@ a img.aligncenter {
     HEADER
 -------------------------------------------------------------------*/
 
-.navbar-dark{
-	
-}
-
 .navbar-dark .navbar-nav .nav-link{
 	color: #ffffff;
 	letter-spacing: 1px;
@@ -383,7 +379,7 @@ a img.aligncenter {
 }
 
 .heading h3{
-	color: ffffff;
+	color: #ffffff;
 }
 
 .cd-words-wrapper {
@@ -2130,7 +2126,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 1.2 !important;
 }
 
 .footer {
@@ -2376,7 +2372,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2385,7 +2381,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
@@ -2467,4 +2463,112 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* About Section Styles */
+.about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, #f9c700 0%, #ff9500 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.highlight-box .lead {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.sub-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    margin-top: 2rem;
+}
+
+.about-content .skill-area,
+.about-content .experience-area,
+.about-content .mission-area {
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.right-box-pro img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.right-box-pro img:hover {
+    transform: translateY(-5px);
+}
+
+.experience-badges {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.badge-item {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.badge-item:hover {
+    transform: translateY(-3px);
+}
+
+.badge-item i {
+    font-size: 24px;
+    color: #f9c700;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.badge-item span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .highlight-box {
+        padding: 15px;
+    }
+    
+    .badge-item {
+        min-width: 120px;
+    }
+    
+    .experience-badges {
+        margin-top: 1.5rem;
+    }
 }
